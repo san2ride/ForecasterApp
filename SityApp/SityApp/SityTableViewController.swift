@@ -61,15 +61,19 @@ class SityTableViewController: UITableViewController {
                                                     print(longitude)
                                                     
                                                     if let current = self.currentCity {
+                                                        
+                                                        dispatch_async(dispatch_get_main_queue(), {
                                                         self.citysArray.append(current)
-                                                    }
+                                                        self.tableView.reloadData()
+                                                    })
+                                            }
                                                     
                                                 
-                                                })
+                                        })
                                             
                                                 
-                                            }
-                                        }
+                                    }
+                                }
                                         
                                         
                                         
@@ -97,6 +101,14 @@ class SityTableViewController: UITableViewController {
             
             // configure the placeholder text
             textField.placeholder = "Please enter your name"
+        }
+        
+        
+        alert.addTextFieldWithConfigurationHandler {
+            (textField) in
+            
+            // configure the placeholder text
+            textField.placeholder = "Please zipcode"
         }
         
         // Present the alert using presentViewController

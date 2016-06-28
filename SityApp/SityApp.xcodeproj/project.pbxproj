@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4F768BF1D2328B6000E9C34 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F768BE1D2328B6000E9C34 /* CityTableViewCell.swift */; };
 		A4FFB6731D2301F400A0F006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFB6721D2301F400A0F006 /* AppDelegate.swift */; };
 		A4FFB6781D2301F400A0F006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FFB6761D2301F400A0F006 /* Main.storyboard */; };
 		A4FFB67A1D2301F400A0F006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FFB6791D2301F400A0F006 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4F768BE1D2328B6000E9C34 /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		A4FFB66F1D2301F400A0F006 /* SityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FFB6721D2301F400A0F006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FFB6771D2301F400A0F006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		A4FFB68B1D23048300A0F006 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A4F768BE1D2328B6000E9C34 /* CityTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				A4FFB6851D23024800A0F006 /* SityTableViewController.swift in Sources */,
 				A4FFB6871D23029700A0F006 /* City.swift in Sources */,
+				A4F768BF1D2328B6000E9C34 /* CityTableViewCell.swift in Sources */,
 				A4FFB6731D2301F400A0F006 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +327,7 @@
 				A4FFB6831D2301F400A0F006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

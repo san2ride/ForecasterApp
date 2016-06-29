@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="126" id="W3G-08-A90">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="126" id="W3G-08-A90" customClass="CityTableViewCell" customModule="SityApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W3G-08-A90" id="6Uc-E1-ghq">
@@ -60,6 +60,11 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="ezY-On-Kz4" secondAttribute="bottom" constant="-10" id="rjD-wO-K4r"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cityLabel" destination="bx5-7c-zwA" id="mcs-ck-WXo"/>
+                                    <outlet property="iconView" destination="CO6-Qb-gQf" id="OsW-0Y-vw9"/>
+                                    <outlet property="tempLabel" destination="ezY-On-Kz4" id="bek-My-ewy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

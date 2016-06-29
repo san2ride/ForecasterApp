@@ -10,7 +10,7 @@
         <scene sceneID="ArF-Vc-NEN">
             <objects>
                 <tableViewController id="6rI-V3-Y2i" customClass="SityTableViewController" customModule="SityApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ph2-Yw-mSN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ph2-Yw-mSN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,9 +32,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezY-On-Kz4">
-                                            <rect key="frame" x="281" y="61" width="100" height="66"/>
+                                            <rect key="frame" x="281" y="70" width="135" height="45"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="5Qu-Ex-7sH"/>
+                                                <constraint firstAttribute="width" constant="135" id="iCr-Is-4mf"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="42"/>
                                             <color key="textColor" red="0.1057168891" green="0.86844811889999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,14 +50,14 @@
                                     <color key="backgroundColor" red="0.038762019230769273" green="0.029305960219340767" blue="0.022125040094571738" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="CO6-Qb-gQf" firstAttribute="leading" secondItem="bx5-7c-zwA" secondAttribute="trailing" constant="36" id="4Fn-sQ-nGK"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ezY-On-Kz4" secondAttribute="bottom" constant="2" id="BmH-f5-cgN"/>
                                         <constraint firstItem="bx5-7c-zwA" firstAttribute="top" secondItem="6Uc-E1-ghq" secondAttribute="topMargin" constant="1" id="RHU-9h-XDs"/>
                                         <constraint firstItem="CO6-Qb-gQf" firstAttribute="top" secondItem="6Uc-E1-ghq" secondAttribute="topMargin" id="Yct-3s-7zf"/>
                                         <constraint firstItem="CO6-Qb-gQf" firstAttribute="trailing" secondItem="6Uc-E1-ghq" secondAttribute="trailingMargin" id="aS0-bx-PdD"/>
-                                        <constraint firstItem="CO6-Qb-gQf" firstAttribute="leading" secondItem="ezY-On-Kz4" secondAttribute="trailing" constant="96" id="dnL-eJ-qf6"/>
-                                        <constraint firstItem="ezY-On-Kz4" firstAttribute="top" secondItem="bx5-7c-zwA" secondAttribute="bottom" constant="15" id="iPN-gR-cVD"/>
+                                        <constraint firstItem="CO6-Qb-gQf" firstAttribute="leading" secondItem="ezY-On-Kz4" secondAttribute="trailing" constant="61" id="jDr-ya-p3V"/>
                                         <constraint firstItem="bx5-7c-zwA" firstAttribute="leading" secondItem="6Uc-E1-ghq" secondAttribute="leadingMargin" constant="5" id="k9K-L7-BJ7"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="CO6-Qb-gQf" secondAttribute="bottom" constant="12" id="l3G-jc-79H"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="ezY-On-Kz4" secondAttribute="bottom" constant="-10" id="rjD-wO-K4r"/>
+                                        <constraint firstItem="ezY-On-Kz4" firstAttribute="top" secondItem="bx5-7c-zwA" secondAttribute="bottom" constant="24" id="wig-ZP-Xpi"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

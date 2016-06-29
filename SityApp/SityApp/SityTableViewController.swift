@@ -23,7 +23,7 @@ class SityTableViewController: UITableViewController {
     
     @IBAction func addButton(sender: AnyObject) {
         
-        let alert = UIAlertController(title: "Add Name", message: "Add a new name", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Add City", message: "Add a new city", preferredStyle: .Alert)
         
         // Create an action called "Save"
         
@@ -121,11 +121,13 @@ class SityTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CityTableViewCell
         
         let c = self.citysArray[indexPath.row]
         
-        cell.textLabel?.text = c.zipcode
+        
+        cell.cityLabel.text = c.name
+        cell.tempLabel.text = c.zipcode
         
         return cell
         

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4AB557A1D24697800D80F17 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB55791D24697800D80F17 /* WeatherViewController.swift */; };
+		A4AB557C1D24746C00D80F17 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB557B1D24746C00D80F17 /* APIController.swift */; };
 		A4F768BF1D2328B6000E9C34 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F768BE1D2328B6000E9C34 /* CityTableViewCell.swift */; };
 		A4FFB6731D2301F400A0F006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFB6721D2301F400A0F006 /* AppDelegate.swift */; };
 		A4FFB6781D2301F400A0F006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FFB6761D2301F400A0F006 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4AB55791D24697800D80F17 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		A4AB557B1D24746C00D80F17 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		A4F768BE1D2328B6000E9C34 /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		A4FFB66F1D2301F400A0F006 /* SityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FFB6721D2301F400A0F006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				A4FFB6841D23024800A0F006 /* SityTableViewController.swift */,
+				A4AB55791D24697800D80F17 /* WeatherViewController.swift */,
+				A4AB557B1D24746C00D80F17 /* APIController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4FFB6851D23024800A0F006 /* SityTableViewController.swift in Sources */,
+				A4AB557A1D24697800D80F17 /* WeatherViewController.swift in Sources */,
+				A4AB557C1D24746C00D80F17 /* APIController.swift in Sources */,
 				A4FFB6871D23029700A0F006 /* City.swift in Sources */,
 				A4F768BF1D2328B6000E9C34 /* CityTableViewCell.swift in Sources */,
 				A4FFB6731D2301F400A0F006 /* AppDelegate.swift in Sources */,

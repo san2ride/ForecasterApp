@@ -79,10 +79,73 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="dDI-gl-RR7" kind="show" identifier="WeatherSegue" id="B0f-dX-1pX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dlc-jb-vMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1022" y="231"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="M8y-hr-Rc9">
+            <objects>
+                <viewController id="dDI-gl-RR7" customClass="WeatherViewController" customModule="SityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WWZ-0v-YJq"/>
+                        <viewControllerLayoutGuide type="bottom" id="MsZ-6y-wqQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BmQ-fY-zXr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BxO-xp-N1s">
+                                <rect key="frame" x="0.0" y="215" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="NMa-Td-0pC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM4-OU-BpP">
+                                <rect key="frame" x="20" y="89" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jEf-mm-Uem"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9e-Ro-ayi">
+                                <rect key="frame" x="20" y="423" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4jM-Gf-qYU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BxO-xp-N1s" firstAttribute="top" secondItem="SM4-OU-BpP" secondAttribute="bottom" constant="76" id="E04-gC-JlJ"/>
+                            <constraint firstItem="MsZ-6y-wqQ" firstAttribute="top" secondItem="f9e-Ro-ayi" secondAttribute="bottom" constant="137" id="IQq-fl-pWy"/>
+                            <constraint firstItem="f9e-Ro-ayi" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" constant="20" id="Qyk-jN-AWF"/>
+                            <constraint firstItem="BxO-xp-N1s" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" id="aV9-56-Dwv"/>
+                            <constraint firstAttribute="trailing" secondItem="f9e-Ro-ayi" secondAttribute="trailing" constant="20" id="prs-mI-7Cj"/>
+                            <constraint firstItem="SM4-OU-BpP" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" constant="20" id="rVp-4x-UNR"/>
+                            <constraint firstAttribute="trailing" secondItem="BxO-xp-N1s" secondAttribute="trailing" id="tTB-ig-KFp"/>
+                            <constraint firstAttribute="trailing" secondItem="SM4-OU-BpP" secondAttribute="trailing" constant="20" id="wB0-Jm-dmK"/>
+                            <constraint firstItem="SM4-OU-BpP" firstAttribute="top" secondItem="WWZ-0v-YJq" secondAttribute="bottom" constant="25" id="zkF-bz-DE1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="SM4-OU-BpP" id="Do5-H7-mK7"/>
+                        <outlet property="imageView" destination="BxO-xp-N1s" id="7rX-cL-x6J"/>
+                        <outlet property="zipLabel" destination="f9e-Ro-ayi" id="Urx-5V-mGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3t-ku-M9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="231"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zzr-Ix-vJh">

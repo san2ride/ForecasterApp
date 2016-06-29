@@ -128,12 +128,22 @@ class SityTableViewController: UITableViewController {
         
         cell.cityLabel.text = c.name
         cell.tempLabel.text = c.zipcode
-        
+
         return cell
         
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.currentCity = self.citysArray[indexPath.row]
+        self.performSegueWithIdentifier("WeatherSegue", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let controller = segue.destinationViewController as? WeatherViewController
+        
+        controller?.theCity = self.currentCity
         
     }
     

@@ -14,13 +14,7 @@ class City: NSObject {
     var zipcode: String = ""
     var latitude: Double = 0.0
     var longitude: Double = 0.0
+    var imageName: String = ""
     
-//    init(name: String, zipcode: String, latitude: Double, longitude: Double) {
-//        
-//        self.name = name
-//        self.zipcode = zipcode
-//        self.latitude = latitude
-//        self.longitude = longitude
-//
-//    }
+
 }

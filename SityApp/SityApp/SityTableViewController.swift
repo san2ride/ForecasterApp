@@ -27,7 +27,7 @@ class SityTableViewController: UITableViewController {
         
         // Create an action called "Save"
         
-        let saveAction = UIAlertAction(title: "Save",
+        let saveAction = UIAlertAction(title: "TRVL",
                                        style: .Default,
                                        handler: {
                                         (action) in
@@ -100,7 +100,7 @@ class SityTableViewController: UITableViewController {
             (textField) in
             
             // configure the placeholder text
-            textField.placeholder = "Please enter your name"
+            textField.placeholder = "enter desired city"
         }
         
         
@@ -108,7 +108,7 @@ class SityTableViewController: UITableViewController {
             (textField) in
             
             // configure the placeholder text
-            textField.placeholder = "Please zipcode"
+            textField.placeholder = "zipcode"
         }
         
         // Present the alert using presentViewController

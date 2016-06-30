@@ -99,48 +99,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BxO-xp-N1s">
-                                <rect key="frame" x="0.0" y="215" width="600" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="NMa-Td-0pC"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherH:C" translatesAutoresizingMaskIntoConstraints="NO" id="2UW-iv-UE0">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM4-OU-BpP">
-                                <rect key="frame" x="20" y="89" width="560" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM4-OU-BpP">
+                                <rect key="frame" x="3" y="67" width="370" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="jEf-mm-Uem"/>
+                                    <constraint firstAttribute="height" constant="55" id="6vs-pd-vfv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9e-Ro-ayi">
-                                <rect key="frame" x="20" y="423" width="560" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="66°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9e-Ro-ayi" userLabel="Temp Label">
+                                <rect key="frame" x="10" y="127" width="143" height="121"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="88"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partly Cloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGx-CN-kSi">
+                                <rect key="frame" x="243" y="127" width="130" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4jM-Gf-qYU"/>
+                                    <constraint firstAttribute="width" constant="130" id="14x-B8-mk4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BxO-xp-N1s">
+                                <rect key="frame" x="396" y="67" width="195" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="plO-Lh-JR9"/>
+                                    <constraint firstAttribute="height" constant="165" id="zSS-8j-9sS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NNE 5 MPH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pD-Er-cnn">
+                                <rect key="frame" x="235" y="187" width="130" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BxO-xp-N1s" firstAttribute="top" secondItem="SM4-OU-BpP" secondAttribute="bottom" constant="76" id="E04-gC-JlJ"/>
-                            <constraint firstItem="MsZ-6y-wqQ" firstAttribute="top" secondItem="f9e-Ro-ayi" secondAttribute="bottom" constant="137" id="IQq-fl-pWy"/>
-                            <constraint firstItem="f9e-Ro-ayi" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" constant="20" id="Qyk-jN-AWF"/>
-                            <constraint firstItem="BxO-xp-N1s" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" id="aV9-56-Dwv"/>
-                            <constraint firstAttribute="trailing" secondItem="f9e-Ro-ayi" secondAttribute="trailing" constant="20" id="prs-mI-7Cj"/>
-                            <constraint firstItem="SM4-OU-BpP" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" constant="20" id="rVp-4x-UNR"/>
-                            <constraint firstAttribute="trailing" secondItem="BxO-xp-N1s" secondAttribute="trailing" id="tTB-ig-KFp"/>
-                            <constraint firstAttribute="trailing" secondItem="SM4-OU-BpP" secondAttribute="trailing" constant="20" id="wB0-Jm-dmK"/>
-                            <constraint firstItem="SM4-OU-BpP" firstAttribute="top" secondItem="WWZ-0v-YJq" secondAttribute="bottom" constant="25" id="zkF-bz-DE1"/>
+                            <constraint firstItem="tGx-CN-kSi" firstAttribute="trailing" secondItem="SM4-OU-BpP" secondAttribute="trailing" id="4t4-rx-Fsh"/>
+                            <constraint firstItem="BxO-xp-N1s" firstAttribute="leading" secondItem="7pD-Er-cnn" secondAttribute="trailing" constant="31" id="7cT-MX-ADd"/>
+                            <constraint firstAttribute="trailing" secondItem="BxO-xp-N1s" secondAttribute="trailing" constant="9" id="Ahq-yi-qmY"/>
+                            <constraint firstItem="2UW-iv-UE0" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" id="CTs-c2-QUc"/>
+                            <constraint firstItem="tGx-CN-kSi" firstAttribute="centerY" secondItem="BxO-xp-N1s" secondAttribute="centerY" id="IwM-Zj-DOk"/>
+                            <constraint firstItem="7pD-Er-cnn" firstAttribute="bottom" secondItem="BxO-xp-N1s" secondAttribute="bottom" id="N3L-7l-M7F"/>
+                            <constraint firstItem="BxO-xp-N1s" firstAttribute="top" secondItem="WWZ-0v-YJq" secondAttribute="bottom" constant="3" id="T2n-6e-8yg"/>
+                            <constraint firstItem="MsZ-6y-wqQ" firstAttribute="top" secondItem="2UW-iv-UE0" secondAttribute="bottom" id="YMZ-zz-XBg"/>
+                            <constraint firstItem="f9e-Ro-ayi" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" constant="10" id="cPZ-90-HN9"/>
+                            <constraint firstItem="SM4-OU-BpP" firstAttribute="leading" secondItem="BmQ-fY-zXr" secondAttribute="leading" constant="3" id="h3j-DY-heB"/>
+                            <constraint firstItem="SM4-OU-BpP" firstAttribute="top" secondItem="WWZ-0v-YJq" secondAttribute="bottom" constant="3" id="jCY-OT-egA"/>
+                            <constraint firstItem="7pD-Er-cnn" firstAttribute="top" secondItem="tGx-CN-kSi" secondAttribute="bottom" constant="15" id="lNS-vO-RrV"/>
+                            <constraint firstItem="f9e-Ro-ayi" firstAttribute="top" secondItem="SM4-OU-BpP" secondAttribute="bottom" constant="5" id="n8s-ij-EaJ"/>
+                            <constraint firstAttribute="trailing" secondItem="2UW-iv-UE0" secondAttribute="trailing" id="oCx-u6-N8O"/>
+                            <constraint firstItem="tGx-CN-kSi" firstAttribute="top" secondItem="f9e-Ro-ayi" secondAttribute="top" id="ofX-9U-wL0"/>
+                            <constraint firstItem="2UW-iv-UE0" firstAttribute="top" secondItem="WWZ-0v-YJq" secondAttribute="bottom" id="qix-HR-AVL"/>
+                            <constraint firstItem="7pD-Er-cnn" firstAttribute="centerX" secondItem="2UW-iv-UE0" secondAttribute="centerX" id="qrt-7Y-UD2"/>
+                            <constraint firstItem="BxO-xp-N1s" firstAttribute="leading" secondItem="SM4-OU-BpP" secondAttribute="trailing" constant="23" id="zcK-EK-Vh9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="SM4-OU-BpP" id="Do5-H7-mK7"/>
                         <outlet property="imageView" destination="BxO-xp-N1s" id="7rX-cL-x6J"/>
-                        <outlet property="zipLabel" destination="f9e-Ro-ayi" id="Urx-5V-mGP"/>
+                        <outlet property="summaryLabel" destination="tGx-CN-kSi" id="ANG-Ev-eGe"/>
+                        <outlet property="tempLabel" destination="f9e-Ro-ayi" id="af0-zc-ujN"/>
+                        <outlet property="windLabel" destination="7pD-Er-cnn" id="zJh-EM-Iu9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3t-ku-M9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,6 +195,7 @@
     </scenes>
     <resources>
         <image name="Lightning" width="32" height="32"/>
+        <image name="WeatherH:C" width="700" height="400"/>
         <image name="snow" width="64" height="62"/>
     </resources>
 </document>

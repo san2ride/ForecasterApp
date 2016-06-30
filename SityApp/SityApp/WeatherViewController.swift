@@ -8,14 +8,40 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController {
+protocol WeatherDeleagate: class {
+    func passWeather(theWeather: Weather)
+}
+
+class WeatherViewController: UIViewController, WeatherDeleagate {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cityLabel: UILabel!
-    @IBOutlet weak var zipLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var summaryLabel: UILabel!
+    @IBOutlet weak var windLabel: UILabel!
+    
     
     let apiController = APIController ()
     var theCity: City?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.apiController.delegate = self
+    }
+    
+    func passWeather(theWeather: Weather) {
+        
+        self.cityLabel.text = theCity?.name
+        
+        let temp = Int(theWeather.temperature)
+        
+        self.tempLabel.text = "\(temp)"
+        self.summaryLabel.text = theWeather.summary
+        self.windLabel.text = "\(theWeather.windSpeed)"
+        self.imageView.image = UIImage(named: theWeather.icon)
+        
+    }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,8 +49,8 @@ class WeatherViewController: UIViewController {
         if let city = self.theCity {
             
             self.cityLabel.text = city.name
-            self.zipLabel.text = city.zipcode
-            self.imageView.image = UIImage(named: city.imageName)
+            
+            
             
         
             let latlong = "\(city.latitude)" + "," + "\(city.longitude)"

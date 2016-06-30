@@ -13,7 +13,7 @@ class APIController: NSObject {
    
     let session = NSURLSession.sharedSession()
     
-
+    weak var delegate: WeatherDeleagate?
     
     func fetchWeather(latlong: String) {
         
@@ -48,12 +48,14 @@ class APIController: NSObject {
                             
                                 let w = Weather(dict: currDict)
                                 
-                                        print(w.summary)
-                                        print(w.icon)
-                                        print(w.precipProbability)
-                                        print(w.temperature)
-                                        print(w.humidity)
-                                        print(w.windSpeed)
+                                self.delegate?.passWeather(w)
+                                
+//                                        print(w.summary)
+//                                        print(w.icon)
+//                                        print(w.precipProbability)
+//                                        print(w.temperature)
+//                                        print(w.humidity)
+//                                        print(w.windSpeed)
                                 
                                 
                                     } else {

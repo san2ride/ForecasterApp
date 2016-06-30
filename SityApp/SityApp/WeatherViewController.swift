@@ -14,28 +14,24 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var zipLabel: UILabel!
     
-    
+    let apiController = APIController ()
     var theCity: City?
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 
+        if let city = self.theCity {
+            
+            self.cityLabel.text = city.name
+            self.zipLabel.text = city.zipcode
+            self.imageView.image = UIImage(named: city.imageName)
+            
         
-        if let sity = self.theCity {
-            
-            self.cityLabel?.text = sity.name
-            self.zipLabel?.text = sity.zipcode
-            self.imageView?.image = UIImage(named: sity.imageName)
-            
-            
+            let latlong = "\(city.latitude)" + "," + "\(city.longitude)"
+        
+            self.apiController.fetchWeather(latlong)
         }
         
-        
     }
-    
-    
-    
-    
-    
     
 }

@@ -14,11 +14,11 @@ protocol WeatherDeleagate: class {
 
 class WeatherViewController: UIViewController, WeatherDeleagate {
     
-    @IBOutlet weak var imageView: UIImageView!
+   
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var summaryLabel: UILabel!
-    @IBOutlet weak var windLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     
     let apiController = APIController ()
@@ -38,7 +38,6 @@ class WeatherViewController: UIViewController, WeatherDeleagate {
         
         self.tempLabel.text = "\(temp)"
         self.summaryLabel.text = theWeather.summary
-        self.windLabel.text = "\(theWeather.windSpeed)"
         self.imageView.image = UIImage(named: theWeather.icon)
         
     }

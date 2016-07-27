@@ -13,7 +13,7 @@ class CityTableViewCell: UITableViewCell {
     
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
-    @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var zipLabel: UILabel!
     
     
 }

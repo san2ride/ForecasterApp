@@ -15,5 +15,8 @@ class City: NSObject {
     var latitude: Double = 0.0
     var longitude: Double = 0.0
     var imageName: String = ""
+    var temperature: Double = 0.0
     
 }
+
+

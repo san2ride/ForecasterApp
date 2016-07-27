@@ -126,9 +126,12 @@ class SityTableViewController: UITableViewController {
         let c = self.citysArray[indexPath.row]
         
         
+        let temp = Int(c.temperature)
+        
         cell.cityLabel.text = c.name
         cell.tempLabel.text = c.zipcode
-
+        cell.zipLabel.text = "\(temp)"
+        
         return cell
         
     }

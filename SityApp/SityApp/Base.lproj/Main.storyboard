@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--City-->
@@ -24,51 +23,50 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherH:C" translatesAutoresizingMaskIntoConstraints="NO" id="Fa5-9J-yGZ">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="125"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="125" id="ee1-iM-ra3"/>
-                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx5-7c-zwA">
-                                            <rect key="frame" x="36" y="20" width="237" height="37"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezY-On-Kz4">
-                                            <rect key="frame" x="281" y="70" width="135" height="45"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="135" id="D4h-40-Mj0"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="84068" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezY-On-Kz4">
+                                            <rect key="frame" x="194" y="64" width="70" height="33"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snow" translatesAutoresizingMaskIntoConstraints="NO" id="CO6-Qb-gQf">
-                                            <rect key="frame" x="497" y="12" width="100" height="100"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBc-mw-KAe">
+                                            <rect key="frame" x="465" y="23" width="112" height="75"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="H0m-8r-qJT"/>
+                                                <constraint firstAttribute="width" constant="112" id="XQu-R0-Asz"/>
                                             </constraints>
-                                        </imageView>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="68"/>
+                                            <color key="textColor" red="0.98631810897435901" green="0.98631810897435901" blue="0.98631810897435901" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx5-7c-zwA">
+                                            <rect key="frame" x="36" y="19" width="237" height="37"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="37" id="ECb-ye-RRK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="Fa5-9J-yGZ" secondAttribute="trailing" id="2Nh-w0-1WG"/>
-                                        <constraint firstItem="CO6-Qb-gQf" firstAttribute="leading" secondItem="ezY-On-Kz4" secondAttribute="trailing" constant="81" id="Im2-zD-nhF"/>
-                                        <constraint firstItem="Fa5-9J-yGZ" firstAttribute="leading" secondItem="6Uc-E1-ghq" secondAttribute="leading" id="Pxi-cY-Ozd"/>
-                                        <constraint firstItem="bx5-7c-zwA" firstAttribute="top" secondItem="6Uc-E1-ghq" secondAttribute="topMargin" constant="12" id="V6J-OO-yo4"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="ezY-On-Kz4" secondAttribute="bottom" constant="2" id="bMp-1X-QQe"/>
-                                        <constraint firstItem="CO6-Qb-gQf" firstAttribute="centerY" secondItem="Fa5-9J-yGZ" secondAttribute="centerY" id="bU0-Dc-0GA"/>
-                                        <constraint firstItem="ezY-On-Kz4" firstAttribute="top" secondItem="6Uc-E1-ghq" secondAttribute="topMargin" constant="62" id="eQa-EH-wr7"/>
-                                        <constraint firstItem="bx5-7c-zwA" firstAttribute="leading" secondItem="6Uc-E1-ghq" secondAttribute="leadingMargin" constant="28" id="eXB-aH-BaT"/>
-                                        <constraint firstItem="CO6-Qb-gQf" firstAttribute="top" secondItem="6Uc-E1-ghq" secondAttribute="topMargin" constant="4" id="jSi-0W-Ek6"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="bx5-7c-zwA" secondAttribute="bottom" constant="60" id="kHb-gY-OH5"/>
-                                        <constraint firstItem="CO6-Qb-gQf" firstAttribute="centerY" secondItem="6Uc-E1-ghq" secondAttribute="centerY" id="nVt-U5-5cB"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="CO6-Qb-gQf" secondAttribute="trailing" constant="-5" id="y5e-4l-5Pc"/>
+                                        <constraint firstItem="ezY-On-Kz4" firstAttribute="leading" secondItem="6Uc-E1-ghq" secondAttribute="leading" constant="194" id="COT-1d-CMm"/>
+                                        <constraint firstItem="bx5-7c-zwA" firstAttribute="top" secondItem="6Uc-E1-ghq" secondAttribute="top" constant="19" id="KIh-Hy-H1A"/>
+                                        <constraint firstItem="PBc-mw-KAe" firstAttribute="top" secondItem="6Uc-E1-ghq" secondAttribute="top" constant="23" id="ZWw-dZ-kKD"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fa5-9J-yGZ" secondAttribute="trailing" id="aVJ-42-leV"/>
+                                        <constraint firstAttribute="bottom" secondItem="PBc-mw-KAe" secondAttribute="bottom" constant="27" id="cfp-Um-Hmf"/>
+                                        <constraint firstItem="Fa5-9J-yGZ" firstAttribute="top" secondItem="6Uc-E1-ghq" secondAttribute="top" id="k0h-MA-yOb"/>
+                                        <constraint firstAttribute="trailing" secondItem="PBc-mw-KAe" secondAttribute="trailing" constant="23" id="ksM-kq-v9c"/>
+                                        <constraint firstItem="ezY-On-Kz4" firstAttribute="top" secondItem="bx5-7c-zwA" secondAttribute="bottom" constant="8" id="qZq-Wh-LwK"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fa5-9J-yGZ" secondAttribute="bottom" id="tnP-uL-550"/>
+                                        <constraint firstItem="Fa5-9J-yGZ" firstAttribute="leading" secondItem="6Uc-E1-ghq" secondAttribute="leading" id="wBu-hN-MMi"/>
+                                        <constraint firstItem="bx5-7c-zwA" firstAttribute="leading" secondItem="6Uc-E1-ghq" secondAttribute="leading" constant="36" id="xwG-6l-Rkz"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cityLabel" destination="bx5-7c-zwA" id="mcs-ck-WXo"/>
-                                    <outlet property="iconView" destination="CO6-Qb-gQf" id="OsW-0Y-vw9"/>
                                     <outlet property="tempLabel" destination="ezY-On-Kz4" id="bek-My-ewy"/>
+                                    <outlet property="zipLabel" destination="PBc-mw-KAe" id="w48-tx-74f"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -104,7 +102,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherH:C" translatesAutoresizingMaskIntoConstraints="NO" id="2UW-iv-UE0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherH:C" translatesAutoresizingMaskIntoConstraints="NO" id="2UW-iv-UE0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM4-OU-BpP">
@@ -190,6 +188,5 @@
     <resources>
         <image name="Lightning" width="32" height="32"/>
         <image name="WeatherH:C" width="700" height="400"/>
-        <image name="snow" width="64" height="62"/>
     </resources>
 </document>

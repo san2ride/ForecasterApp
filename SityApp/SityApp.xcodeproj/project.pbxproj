@@ -146,7 +146,7 @@
 				TargetAttributes = {
 					A4FFB66E1D2301F400A0F006 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 6D9CKTK39V;
+						DevelopmentTeam = 7QLQZLZHA6;
 					};
 				};
 			};
@@ -306,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.SityApp;
@@ -317,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.SityApp;
